@@ -216,11 +216,12 @@ body {
 }
 
 .footer {
-    padding: 20px;
+    padding: 17px;
     background-color: rgb(57, 57, 57);
     text-align: center;
 }
 
 .footer p {
+    font-size: 12px;
     color: white;
 }

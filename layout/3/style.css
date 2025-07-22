@@ -1,0 +1,65 @@
+/* STYLE */
+body {
+    font-family: sans-serif;
+    background-image: url(img/micro_carbon.png);
+    background-size: cover;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    background-color: rgb(211, 211, 211);
+    /* border: 2px solid red; */
+}
+
+.container .title {
+    padding: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.kotak {
+    height: 500px;
+}
+
+.kiri {
+    background-image: url(img/1.jpg);
+    background-size: cover;
+    background-position: -65px;
+    width: 200px;
+    height: 500px;
+    float: left;
+}
+
+.tengah {
+    background-image: url(img/2.jpg);
+    background-size: cover;
+    background-position: -180px;
+    width: 400px;
+    height: 500px;
+    float: left;
+}
+
+.kanan {
+    background-image: url(img/3.jpg);
+    background-size: cover;
+    background-position: -40px;
+    width: 200px;
+    height: 500px;
+    float: left;
+}
+
+.main {
+    padding: 20px;
+}
+
+.main .penulis {
+    text-decoration: none;
+    margin-top: -20px;
+}
+
+.footer {
+    padding: 20px;font-size: small;
+    background-color: rgb(75, 75, 75);
+    text-align: center;
+    color: white;
+}
