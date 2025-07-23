@@ -1,0 +1,128 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* STYLE */
+
+body {
+    background-image: url(img/body.png);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 6px black;
+}
+
+.container .header {
+    padding: 20px;
+}
+
+.container .header .judul {
+    font-size: 40px;
+}
+
+.container li {
+    display: inline-block;
+    padding: 10px;
+    background-color: skyblue;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.container li:hover {
+    background-color: salmon;
+}
+
+.container li a {
+    text-decoration: none;
+    color: white;
+}
+
+.container .image {
+    height: 300px;
+    background-image: url(img/jpn.jpg);
+    background-size: cover;
+    border-bottom: 4px solid skyblue;
+    border-top: 4px solid salmon;
+}
+
+.container .main {
+    padding: 20px;
+}
+
+.main .judul {
+    font-size: 30px;
+}
+
+.main .penulis {
+    margin-top: 2px;
+}
+
+.main .penulis a {
+    text-decoration: none;
+    color: gray;
+}
+
+.main p {
+    margin-top: 18px;
+}
+
+.footer {
+    background-color: rgb(77, 77, 77);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    font-size: 13px;
+    color: white;
+}
