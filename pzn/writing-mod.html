@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            background-color: salmon;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .title {
+            margin: 20px;
+        }
+
+        .card {
+            margin: 0 10px;
+            min-width: 200px;
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 0 13px gray;
+        }
+
+        .card .p1 {
+            writing-mode: sideways-lr;
+        }
+
+        .card .p2 {
+            writing-mode: vertical-rl;
+        }
+
+        .container {
+            min-width: 200px;
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Writing Mode</h1>
+    <div class="container">
+        <div class="card">
+            <h1>Card</h1>
+            <p class="p1">andae eum pariatur sed voluptas consequuntur nemo, molestias illo voluptates aliquam delectus quod alias quia. Earum nesciunt magni dolore voluptatem tempore quod consequatur, possimus quis corporis. Alias quibusdam atque, eum eligendi libero quas labore quae unde dignissimos iusto officia ex mollitia illo consequatur quia..</p>
+        </div>
+        <div class="card">
+            <h1>Card</h1>
+            <p class="p2">andae eum pariatur sed voluptas consequuntur nemo, molestias illo voluptates aliquam delectus quod alias quia. Earum nesciunt magni dolore voluptatem tempore quod consequatur, possimus quis corporis. Alias quibusdam atque, eum eligendi libero quas labore quae unde dignissimos iusto officia ex mollitia illo consequatur quia..</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* [attribute] [attribute="value"] (~ | ^ $ *) */
+        #p[class*="title"] {
+            font-style: italic;
+            color: white;
+            background-color: black;
+        }
+
+        a[target="_blank"] {
+            color: red;
+        }
+
+        p[title*="F30"] {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a class="title" href="" target="_blank">Contoh 1</a>
+        <a href="">Contoh 1</a>
+        <a href="" target="_self">Contoh 1</a>
+        <a href="">Contoh 1</a>
+
+        <p title="F30-awsdll">Apa yah</p>
+        <p title="F30 convert">BMW F30 Convert F32</p>
+        <p title="F30">BMW F32</p>
+        <p title="Beemweh F30">BMW F32</p>
+        <p title="F32">BMW F32</p>
+        <p id="p" class="title book keep" title="BMWF32">BMW F32</p>
+    </div>
+</body>
+</html>

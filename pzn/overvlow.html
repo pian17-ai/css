@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            background-color: salmon;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .title {
+            margin: 20px;
+        }
+
+        .card1 {
+            margin: 0 10px;
+            min-width: 200px;
+            max-width: 400px;
+            height: 150px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 0 13px gray;
+            overflow: scroll;
+        }
+
+        .card2 {
+            margin: 0 10px;
+            min-width: 200px;
+            max-width: 400px;
+            height: 150px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 0 13px gray;
+            overflow: auto;
+        }
+
+        .container {
+            min-width: 200px;
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Overflow</h1>
+    <div class="container">
+        <div class="card1">
+            <h1>Card</h1>
+            <p class="p1">andae eum pariatur sed voluptas consequuntur nemo, molestias illo voluptates aliquam delectus quod alias quia. Earum nesciunt magni dolore voluptatem tempore quod consequatur, possimus quis corporis. Alias quibusdam atque, eum eligendi libero quas labore quae unde dignissimos iusto officia ex mollitia illo consequatur quia..</p>
+        </div>
+        <div class="card2">
+            <h1>Card</h1>
+            <p class="p2">andae eum pariatur sed voluptas consequuntur nemo, molestias illo voluptates aliquam delectus quod alias quia. Earum nesciunt magni dolore voluptatem tempore quod consequatur, possimus quis corporis. Alias quibusdam atque, eum eligendi libero quas labore quae unde dignissimos iusto officia ex mollitia illo consequatur quia.. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam reprehenderit asperiores architecto distinctio nulla iure id consequuntur! Esse nemo obcaecati odit quasi, consectetur minima ea omnis temporibus deserunt dolorem, ipsam cum. Recusandae asperiores reprehenderit ullam optio vero sed perspiciatis eligendi, id nobis aliquid voluptatem consequuntur cum, laudantium inventore magnam rerum at ab dolor! Itaque nisi rem, perspiciatis fugit, natus libero dolore consequatur aut corrupti, temporibus inventore quis sapiente dolores quas cupiditate! Iure, mollitia ipsum praesentium vitae aperiam voluptate aliquid repellat, itaque dolore officia laboriosam, quia delectus libero sunt saepe autem.</p>
+        </div>
+    </div>
+</body>
+</html>

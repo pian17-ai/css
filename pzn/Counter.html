@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        body {
+            counter-set: title 0;
+            counter-set: subtitle 0;
+        }
+
+        h1 {
+            counter-increment: title 1;
+            counter-reset: subtitle;
+        }
+
+        h2 {
+            counter-increment: subtitle 1;
+        }
+
+        h1::before {
+            content: counter(title) ". ";
+        }
+
+        h2::before {
+            content: counter(title) "." counter(subtitle) ". ";
+        }
+    </style>
+</head>
+<body>
+    <h1>Title</h1>
+    <h2>Subtitle</h2>
+    <h2>Subtitle</h2>
+    <h2>Subtitle</h2>
+    <h1>Title</h1>
+    <h2>Subtitle</h2>
+    <h2>Subtitle</h2>
+    <h2>Subtitle</h2>
+    <h1>Title</h1>
+    <h2>Subtitle</h2>
+    <h2>Subtitle</h2>
+    <h2>Subtitle</h2>
+    <h1>Title</h1>
+    <h2>Subtitle</h2>
+    <h2>Subtitle</h2>
+    <h2>Subtitle</h2>
+    <h1>Title</h1>
+    <h2>Subtitle</h2>
+    <h2>Subtitle</h2>
+    <h2>Subtitle</h2>
+</body>
+</html>
