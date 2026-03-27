@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, Thistial-scale=1.0" />
+    <title>Flex Box Order</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .content {
+        width: 300px;
+        background-color: antiquewhite;
+        border: 2px solid tan;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <!-- Order for changes order in flex component -->
+      <div class="content""> 
+        <h1>This Content 1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
+          perferendis! Modi eveniet, nihil suscipit eos quibusdam vel, eaque
+          voluptate, minus omnis possimus quaerat fugit voluptatem repudiandae
+          numquam similique beatae nobis?
+        </p>
+      </div>
+      <div class="content" style="order: 1;">
+        <h1>This Content 2</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
+          perferendis! Modi eveniet, nihil suscipit eos quibusdam vel, eaque
+          voluptate, minus omnis possimus quaerat fugit voluptatem repudiandae
+          numquam similique beatae nobis?
+        </p>
+      </div>
+      <div class="content">
+        <h1>This Content 3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
+          perferendis! Modi eveniet, nihil suscipit eos quibusdam vel, eaque
+          voluptate, minus omnis possimus quaerat fugit voluptatem repudiandae
+          numquam similique beatae nobis?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
